@@ -29,6 +29,19 @@ def selection_sort(arr):
 
 
 def bubble_sort(arr):
+    # we add a for loop that will iterate over the list stopping at the
+    # second to last because after sorting the last number has nothing to
+    # compare against and will already be the largest value.
+    for i in range(0, len(arr)-1):
+        # the inner loop will iterate over the array -1 -i because it so
+        # it closes the loop as lower values are found
+        for j in range(0, len(arr)-1 - i):
+            # add a conditional that compares the current value of j to the
+            # next index of j
+            if arr[j] > arr[j+1]:
+                # if the conditional is true and index j is greater the next
+                # step is to swap the 2 values
+                arr[j], arr[j+1] = arr[j+1], arr[j]
 
     return arr
 
