@@ -46,7 +46,23 @@ def bubble_sort(arr):
     return arr
 
 
+nums = [1, 4, 2, 7, 8, 9, 10, 12, 11]
+
+
+def insertionSort(nums):
+    for i in range(0, len(nums)):
+        for j in range(0, len(nums)):
+            if nums[i] < nums[j]:
+                move_num = nums.pop(i)
+                nums.insert(j, move_num)
+    return nums
+
+
+print(insertionSort(nums))
+
 # STRETCH: implement the Count Sort function below
+
+
 def count_sort(arr, maximum=-1):
 
     return arr
