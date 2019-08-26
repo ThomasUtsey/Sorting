@@ -234,3 +234,5 @@
 
 
 # print(merge_sort(arr))
+arr1 = [1, 5, 8, 9]
+arr2 = [2, 3, 7, 10]
